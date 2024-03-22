@@ -25,7 +25,7 @@ jobs:
       run: npm install
 
     - name: Start server
-      run: npm run start-server
+      run: npm run start
 
     - name: Install Cypress
       run: npm install cypress --save-dev  
