@@ -1,20 +1,24 @@
 name: Calculate BMI
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  calculate_bmi:
+  build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
+
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-        
+
     - name: Run BMI calculation script
-      run: node C:/Users/Oscar Andres/BMI-Rechner/frontend/main.js
+      run: node frontend/main.js
+
 
