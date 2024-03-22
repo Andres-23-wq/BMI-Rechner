@@ -16,5 +16,5 @@ jobs:
         node-version: '14'
         
     - name: Run BMI calculation script
-      run: node frontend/main.js
+      run: node C:/Users/Oscar Andres/BMI-Rechner/frontend/main.js
 
