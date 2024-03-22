@@ -6,6 +6,7 @@
   "scripts": {
     "start": "server.js",
     "start-server": "nodemon server.js",
+    "build": "npm run build"
     "test": "npx jest",
     "start-prod": "npm start",
     "cypress:open": "cypress open"
