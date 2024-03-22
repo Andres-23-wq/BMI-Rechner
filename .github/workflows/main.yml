@@ -36,6 +36,8 @@ jobs:
     - name: Run Cypress tests
       run:  npx cypress run
 
+    - name: Run Cypress headless
+      run:  npx cypress run --headless
 
       
 
