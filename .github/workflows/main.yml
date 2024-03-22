@@ -24,10 +24,6 @@ jobs:
     - name: install chrome
       uses: browser-actions/setup-chrome@v1
 
-    - name: install driver
-      run: apt install -y mesa-vulkan-drivers vulkan-utils
-      
-      
     - name: Install dependencies
       run: npm install
 
