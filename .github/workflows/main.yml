@@ -23,8 +23,7 @@ jobs:
 
     - name: install chrome
       uses: browser-actions/setup-chrome@v1
-      with:
-        chrome-version: 119
+      
       
     - name: Install dependencies
       run: npm install
