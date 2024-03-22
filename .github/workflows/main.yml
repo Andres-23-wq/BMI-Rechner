@@ -14,7 +14,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  
       
     - name: Install dependencies
       run: npm install
@@ -22,8 +27,11 @@ jobs:
     - name: Start server
       run: npm run start-server
 
+    - name: Install Cypress
+      run: npm install cypress --save-dev  
+
     - name: Run Cypress tests
-      run: npm run cy:run
+      run: npm run cypress:run
 
 
 
