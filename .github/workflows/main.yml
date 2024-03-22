@@ -33,8 +33,11 @@ jobs:
     - name: Install Cypress
       run: npm install cypress --save-dev  
 
-    - name: Run Cypress tests
-      run:  npx cypress run
+    - name: Run Cypress Test
+      uses: cypress-io/github-action@v4
+      with:
+        command: npm run cypress:open
+        browser: firefox
 
     - name: Run Cypress headless
       run:  npx cypress run --headless
