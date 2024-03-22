@@ -20,6 +20,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18'  
+
+    - name: install chrome
+      uses: browser-actions/setup-chrome@v1
+      with:
+        chrome-version: 119
       
     - name: Install dependencies
       run: npm install
@@ -37,7 +42,7 @@ jobs:
       uses: cypress-io/github-action@v4
       with:
         command: npm run cypress:open
-        browser: firefox
+        browser: chrome
 
     - name: Run Cypress headless
       run:  npx cypress run --headless
