@@ -1,28 +1,29 @@
 {
-  "name": "bmi-calculator",
-  "version": "1.0.0",
-  "description": "Ein einfacher BMI Rechner",
-  "main": "server.js",
-  "scripts": {
-    "start": "server.js",
-    "start-server": "nodemon server.js",
-    "build": "npm run build"
-    "test": "npx jest",
-    "start-prod": "npm start",
-    "cypress:open": "cypress open"
-  },
-  "dependencies": {
-    "express": "^4.19.1"
-  },
-  "devDependencies": {
-    "cypress": "^13.7.0",
-    "jest": "^27.2.0",
-    "nodemon": "^3.0.1"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
+    "name": "bmi-calculator",
+    "version": "1.0.0",
+    "description": "Ein einfacher BMI Rechner",
+    "main": "server.js",
+    "scripts": {
+      "start": "nodemon server.js",
+      "start-server": "nodemon server.js",
+      "build": "npm run build",
+      "test": "npx jest",
+      "start-prod": "npm start",
+      "cypress:open": "cypress open"
+    },
+    "dependencies": {
+      "express": "^4.19.1"
+    },
+    "devDependencies": {
+      "cypress": "^13.7.0",
+      "jest": "^27.2.0",
+      "nodemon": "^3.0.1"
+    },
+    "jest": {
+      "testEnvironment": "jsdom"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  
